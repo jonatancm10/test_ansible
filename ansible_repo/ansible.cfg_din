@@ -1,0 +1,7 @@
+[defaults]
+inventory        = /home/centos/ansible_repo/inventories/ec2.py
+private_key_file = ../curso-itnow.pem
+remote_user      = centos
+
+[ssh_connection]
+pipelining = True

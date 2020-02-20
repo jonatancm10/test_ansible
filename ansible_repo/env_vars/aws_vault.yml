@@ -1,0 +1,6 @@
+aws_vpc: ""
+aws_access: ""
+aws_secret: ""
+aws_keypair_name: ""
+aws_ec2_ami: ""
+aws_ec2_subnet: ""

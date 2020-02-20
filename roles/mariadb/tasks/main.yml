@@ -1,0 +1,8 @@
+- name: Install REDIS
+  yum:
+    name: redis-server
+    state: present
+- name: Levantar REDIS
+  service: name=redis-server state=started
+- name: Asignar maxmemory 70% 
+  redis_maxmemory: 70

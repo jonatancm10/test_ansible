@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/home/centos/curso-ansible-devops-diciembre/roles/apache/.kitchen/docker_id_rsa"
+image_id: 3636e9966b9b
+container_id: ca2b912279f2b2eb8ab145e6574b47eea9b98a01f50f84e438bc72edd4951153
+hostname: localhost
+port: 32776
+last_action: verify
+last_error: 

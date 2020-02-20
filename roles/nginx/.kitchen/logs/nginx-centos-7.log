@@ -1,0 +1,16 @@
+I, [2020-02-19T10:05:50.756737 #7885]  INFO -- nginx-centos-7: -----> Destroying <nginx-centos-7>...
+I, [2020-02-19T10:05:50.876318 #7885]  INFO -- nginx-centos-7: UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+I, [2020-02-19T10:05:50.876407 #7885]  INFO -- nginx-centos-7: root                5765                5754                0                   09:59               ?                   00:00:00            /usr/lib/systemd/systemd --system --deserialize 14
+I, [2020-02-19T10:05:50.876502 #7885]  INFO -- nginx-centos-7: root                5806                5765                0                   09:59               ?                   00:00:00            /usr/lib/systemd/systemd-journald
+I, [2020-02-19T10:05:50.876530 #7885]  INFO -- nginx-centos-7: root                5825                5765                0                   09:59               ?                   00:00:00            /usr/lib/systemd/systemd-udevd
+I, [2020-02-19T10:05:50.876550 #7885]  INFO -- nginx-centos-7: dbus                5865                5765                0                   09:59               ?                   00:00:00            /bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+I, [2020-02-19T10:05:50.876572 #7885]  INFO -- nginx-centos-7: root                5876                5765                0                   09:59               ?                   00:00:00            /usr/lib/systemd/systemd-logind
+I, [2020-02-19T10:05:50.876591 #7885]  INFO -- nginx-centos-7: root                5881                5765                0                   09:59               ?                   00:00:00            /usr/sbin/atd -f
+I, [2020-02-19T10:05:50.876610 #7885]  INFO -- nginx-centos-7: root                5912                5765                0                   09:59               ?                   00:00:00            /usr/sbin/sshd -D
+I, [2020-02-19T10:05:50.876630 #7885]  INFO -- nginx-centos-7: root                6275                5765                0                   10:00               ?                   00:00:00            /usr/sbin/crond -n
+I, [2020-02-19T10:05:50.876648 #7885]  INFO -- nginx-centos-7: root                7231                5765                0                   10:00               ?                   00:00:00            nginx: master process /usr/sbin/nginx
+I, [2020-02-19T10:05:50.876665 #7885]  INFO -- nginx-centos-7: chrony              7255                7231                0                   10:00               ?                   00:00:00            nginx: worker process
+I, [2020-02-19T10:05:50.876683 #7885]  INFO -- nginx-centos-7: root                7588                5765                0                   10:01               ?                   00:00:00            /usr/sbin/anacron -s
+I, [2020-02-19T10:05:51.178713 #7885]  INFO -- nginx-centos-7: 43fef62c58a7dc5f2d76d3b33bcf4de107f8215d08e6917a084e05432c544d4c
+I, [2020-02-19T10:05:52.771892 #7885]  INFO -- nginx-centos-7: 43fef62c58a7dc5f2d76d3b33bcf4de107f8215d08e6917a084e05432c544d4c
+I, [2020-02-19T10:05:52.784314 #7885]  INFO -- nginx-centos-7: Finished destroying <nginx-centos-7> (0m2.03s).

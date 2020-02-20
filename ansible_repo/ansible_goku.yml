@@ -1,0 +1,20 @@
+- name: configurar nginx
+  hosts: ansible
+  become: True
+  roles:
+    - nginx
+
+- name: configurar mariadb
+  hosts: ansible
+  become: True
+  roles:
+    - mariadb
+
+- name: desplegar página de bienvenida
+  hosts: ansible
+  become: True
+  tasks:
+    - name: copiar página de bienvenida
+      template:
+        src: library/index.html.j2
+        dest: /usr/share/nginx/html/index.html

@@ -1,0 +1,21 @@
+- name: configurar nginx
+  hosts: tag_Name_MaquinaFernando
+  become: True
+  roles:
+    - nginx
+
+- name: configurar mariadb
+  hosts: tag_Name_MaquinaFernando
+  become: True
+  roles:
+    - mariadb
+
+- name: desplegar página de bienvenida
+  hosts: tag_Name_MaquinaFernando
+  become: True
+  tasks:
+    - name: copiar página de bienvenida
+      template:
+        src: library/index.html.j2
+        dest: /usr/share/nginx/html/index.html
+

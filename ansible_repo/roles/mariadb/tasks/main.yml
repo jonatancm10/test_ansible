@@ -1,0 +1,10 @@
+- name: Install MYSQL
+  yum:
+    name: "mariadb" #debian: mysql-server
+    state: present
+- name: Install MariaDB repository
+  yum:
+    name: mariadb-server
+    state: present
+- name: Levantar MariaDB
+  service: name=mariadb state=started

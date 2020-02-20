@@ -1,0 +1,16 @@
+- name: Verificar paquete apache
+  yum:
+    name: "httpd"
+    state: present
+
+- name: Activar apache
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+
+- name: Permisos totales httpd.conf
+  file:
+    path: /etc/httpd/conf/httpd.conf
+    mode: 777
+

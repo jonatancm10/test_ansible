@@ -1,0 +1,3 @@
+I, [2020-02-19T11:52:49.854802 #27333]  INFO -- apache-centos-7: -----> Verifying <apache-centos-7>...
+I, [2020-02-19T11:52:50.134882 #27333]  INFO -- apache-centos-7: Loaded tests from {:path=>".home.centos.curso-ansible-devops-diciembre.roles.apache.test.integration.apache"} 
+I, [2020-02-19T11:52:50.729650 #27333]  INFO -- apache-centos-7: Finished verifying <apache-centos-7> (0m0.87s).

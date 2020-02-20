@@ -1,0 +1,22 @@
+- name: configurar nginx
+  hosts: www
+  become: True
+  roles:
+    - nginx
+
+- name: configurar mariadb
+  hosts: mariadb
+  become: True
+  roles:
+    - mariadb
+
+- name: desplegar página de bienvenida
+  hosts: www
+  become: True
+  tasks:
+    - name: copiar página de bienvenida
+      template:
+        src: templates/index.html.j2
+        dest: /usr/share/nginx/html/index.html
+
+

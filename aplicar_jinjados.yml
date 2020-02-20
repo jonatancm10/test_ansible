@@ -1,0 +1,11 @@
+- name: configurar nginx
+  hosts: www
+  become: True
+  roles:
+    - nginx
+
+- name: configurar jinja2
+  hosts: www
+  become: True
+  roles:
+    - laboratorio-jinja2

@@ -1,0 +1,15 @@
+- name: Install REDIS
+  yum:
+    name: redis
+    state: present
+
+- name: Levantar REDIS
+  service: name=redis state=started
+
+- name: Aplicar Maxmemory
+  template:
+    src: templates/redis.conf.j2
+    dest: /etc/redis.conf
+  notify: 
+  - restart_redis
+

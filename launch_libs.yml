@@ -1,0 +1,5 @@
+- name: Instalar librerias
+  hosts: www
+  become: True
+  roles:
+    - basictools

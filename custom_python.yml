@@ -1,0 +1,5 @@
+- name: Probar NC
+  hosts: www
+  become: True
+  roles:
+    - laboratorio-custommodule

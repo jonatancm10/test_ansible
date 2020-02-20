@@ -1,0 +1,15 @@
+- name: Instalar imagen Redis docker
+  hosts: localhost
+  become: True
+  tasks:
+    - name: build docker container
+      docker_container:
+        name: myredis 
+        image: redis 
+        state: started
+        command: redis-server --appendonly yes
+        recreate: yes
+        ports:
+          - "6379:6379"
+        volumes:
+          - /home/centos/curso-ansible-devops-diciembre/:/tmp  

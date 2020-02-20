@@ -1,0 +1,6 @@
+- name: Instalar Redis
+  hosts: www
+  become: True
+  roles:
+    - redis
+  
